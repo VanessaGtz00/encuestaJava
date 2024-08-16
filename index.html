@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Satisfacción</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encuesta de Satisfacción</h1>
+        
+        <!-- Preguntas de la encuesta -->
+        <form id="miEncuesta">
+            <p>1. ¿Cómo calificaría nuestro servicio?</p>
+            <select id="pregunta1">
+                <option value="Excelente">Excelente</option>
+                <option value="Bueno">Bueno</option>
+                <option value="Regular">Regular</option>
+                <option value="Malo">Malo</option>
+            </select>
+
+            <p>2. ¿Cómo fue la atención recibida?</p>
+            <select id="pregunta2">
+                <option value="Muy buena">Muy buena</option>
+                <option value="Buena">Buena</option>
+                <option value="Regular">Regular</option>
+                <option value="Mala">Mala</option>
+            </select>
+
+            <p>3. ¿Recomendaría nuestros productos?</p>
+            <select id="pregunta3">
+                <option value="Sí, definitivamente">Sí, definitivamente</option>
+                <option value="Probablemente">Probablemente</option>
+                <option value="No estoy seguro">No estoy seguro</option>
+                <option value="No">No</option>
+            </select>
+
+            <p>4. ¿Cómo calificaría la relación calidad-precio?</p>
+            <select id="pregunta4">
+                <option value="Muy buena">Muy buena</option>
+                <option value="Buena">Buena</option>
+                <option value="Regular">Regular</option>
+                <option value="Mala">Mala</option>
+            </select>
+
+            <!-- Botón para enviar la encuesta -->
+            <br><br>
+            <button type="button" onclick="mostrarResultados()">Enviar Encuesta</button>
+        </form>
+
+        <!-- Sección para mostrar los resultados -->
+        <h2>Resultados de la Encuesta:</h2>
+        <p id="resultado1"></p>
+        <p id="resultado2"></p>
+        <p id="resultado3"></p>
+        <p id="resultado4"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
